@@ -16,3 +16,6 @@ Route::post('/reports/store', [ReportController::class, 'store'])->name('reports
 Route::get('/download/pdf/{id}', [ReportController::class, 'downloadPDF'])->name('download.pdf');
 Route::get('/download/ppt/{id}', [ReportController::class, 'downloadPPT'])->name('download.ppt');
 Route::get('/download/word/{id}', [ReportController::class, 'downloadWord'])->name('download.word');
+
+// Preview routes
+Route::get('/preview/ppt/{id}', [ReportController::class, 'previewPPT'])->name('preview.ppt');
